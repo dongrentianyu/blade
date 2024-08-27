@@ -1,13 +1,18 @@
 code-body: yes
 created: 20240827152246176
 creator: 马不前
-modified: 20240827152810091
+modified: 20240827160225069
 modifier: 马不前
-tags: $:/tags/ViewTemplate post
+tags: 
 title: blade-root
 
-<$set name=CurrentTag value={{!!title}} >
-		<$set name=TheFilter filter='[is[current]]' >
-			<$transclude $variable="breadcrumbs" apex_tag-4="Blade" tid-4=<<currentTiddler>>  use_apex_tag-4="Blade" length_limit-2="15"/>
+$:/tags/ViewTemplate
+<$list filter="[<currentTiddler>!prefix[$:/]in-tagtree-of:inclusive[Blade]]">
+	<div style='width:100%'>
+		<$set name=CurrentTag value={{!!title}} >
+			<$set name=TheFilter filter='[is[current]]' >
+				<$transclude $variable="breadcrumbs" apex_tag-4="Blade" tid-4=<<currentTiddler>>  use_apex_tag-4="Blade" length_limit-2="15"/>
+			</$set>
 		</$set>
-</$set>
+	</div>
+</$list>

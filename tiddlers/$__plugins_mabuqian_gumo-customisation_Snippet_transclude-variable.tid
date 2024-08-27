@@ -1,0 +1,10 @@
+caption: transclude-variable
+created: 20240827154037070
+creator: 马不前
+modified: 20240827154037070
+modifier: 马不前
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/transclude-variable
+type: text/vnd.tiddlywiki
+
+<$transclude $variable="" />
