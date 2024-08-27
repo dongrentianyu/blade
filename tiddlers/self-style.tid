@@ -1,6 +1,16 @@
 created: 20240826155541374
-modified: 20240826155613535
+creator: 马不前
+modified: 20240827045557039
+modifier: 马不前
 tags: $:/tags/Stylesheet
 title: self-style
 
+html body .tc-story-river {
+	margin-top: 70px;
+	margin-left: 70px;
+	margin-right: 70px;
+
+}
+
 .tc-subtitle {display:none;}
+h2.tc-title {display:none;)

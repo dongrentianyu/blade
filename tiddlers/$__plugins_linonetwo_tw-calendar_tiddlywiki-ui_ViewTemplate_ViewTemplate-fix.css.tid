@@ -1,0 +1,18 @@
+created: 20240826233043969
+creator: LinOnetwo
+modified: 20240826233043969
+modifier: 马不前
+tags: $:/tags/Stylesheet
+title: $:/plugins/linonetwo/tw-calendar/tiddlywiki-ui/ViewTemplate/ViewTemplate-fix.css
+type: text/vnd.tiddlywiki
+
+\import [[$:/themes/tiddlywiki/vanilla/base]]
+
+@media (max-width: <<sidebarbreakpoint>>) {
+  .tw-calendar-time-range-preview {
+    flex-direction: column;
+  }
+  .tw-calendar-time-range-preview input {
+    width: 100%;
+  }
+}
