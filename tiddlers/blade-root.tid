@@ -1,0 +1,13 @@
+code-body: yes
+created: 20240827152246176
+creator: 马不前
+modified: 20240827152810091
+modifier: 马不前
+tags: $:/tags/ViewTemplate post
+title: blade-root
+
+<$set name=CurrentTag value={{!!title}} >
+		<$set name=TheFilter filter='[is[current]]' >
+			<$transclude $variable="breadcrumbs" apex_tag-4="Blade" tid-4=<<currentTiddler>>  use_apex_tag-4="Blade" length_limit-2="15"/>
+		</$set>
+</$set>

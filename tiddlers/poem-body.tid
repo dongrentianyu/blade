@@ -1,0 +1,9 @@
+code-body: yes
+created: 20240827144311413
+creator: 马不前
+modified: 20240827145854315
+modifier: 马不前
+tags: $:/tags/ViewTemplateBodyFilter
+title: poem-body
+
+[all[current]!is[system]!tag[post]then[poem-template]]

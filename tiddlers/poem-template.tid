@@ -1,0 +1,14 @@
+code-body: yes
+created: 20240827144435605
+creator: 马不前
+modified: 20240827150059763
+modifier: 马不前
+title: poem-template
+
+<div style="text-align: center; white-space: pre-line;">
+
+<$transclude $tiddler=<<currentTiddler>> />
+
+</div>
+
+<$transclude $variable="breadcrumbs" apex_tag-4="0023" tid-4="369" use_apex_tag-4="0023" length_limit-2="15"/>

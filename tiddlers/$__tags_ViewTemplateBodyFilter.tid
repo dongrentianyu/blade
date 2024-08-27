@@ -1,0 +1,6 @@
+created: 20240827144643579
+creator: 马不前
+list: $:/config/ViewTemplateBodyFilters/testcase $:/config/ViewTemplateBodyFilters/hide-body $:/config/ViewTemplateBodyFilters/code-body $:/config/ViewTemplateBodyFilters/stylesheet $:/config/ViewTemplateBodyFilters/core-ui-tags $:/config/ViewTemplateBodyFilters/system $:/config/ViewTemplateBodyFilters/import $:/config/ViewTemplateBodyFilters/plugin poem-body $:/plugins/mabuqian/gumo-customisation/long-text-browsing/tagsFilters $:/config/ViewTemplateBodyFilters/default
+modified: 20240827145854318
+modifier: 马不前
+title: $:/tags/ViewTemplateBodyFilter
