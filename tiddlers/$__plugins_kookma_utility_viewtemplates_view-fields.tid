@@ -1,0 +1,25 @@
+created: 20240827161838542
+creator: 马不前
+description: Toggle field handling in view mode
+modified: 20240827161838542
+modifier: 马不前
+tags: $:/tags/ViewTemplate
+title: $:/plugins/kookma/utility/viewtemplates/view-fields
+type: text/vnd.tiddlywiki
+
+<$reveal type=match stateTiddler stateTitle="$:/state/utility/view-fields" stateField=text default="hide" text=show tag=div class="kk-ut-viewfields">
+
+<$vars newFieldNameTiddler=<<qualify "$:/temp/NewFieldName">>
+newFieldValueTiddler=<<qualify "$:/temp/NewFieldValue">>  
+searchListState=<<qualify "$:/temp/searchListState">> 
+storeTitle=<<qualify "$:/temp/storeTitle">> 
+>
+<$transclude tiddler="$:/core/ui/EditTemplate/fields"/>
+</$vars>
+
+</$reveal>
+
+<!-- IMPORTANT Note: I had to use another viewtemplate for TW 5.2.3+, which do not use in TW 5.2.2 and older, but after 5.3.3
+I could use the old viewtemplate to show the fields!
+See: https://github.com/Jermolene/TiddlyWiki5/discussions/6803#discussioncomment-3190043
+-->

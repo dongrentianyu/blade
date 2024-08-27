@@ -1,0 +1,17 @@
+caption: 节点丸置顶
+code-body: yes
+created: 20240827161838542
+creator: 马不前
+modified: 20240827161838542
+modifier: 马不前
+tags: $:/tags/ViewTemplate
+title: $:/plugins/mabuqian/gumo-customisation/node-pill-top
+type: text/vnd.tiddlywiki
+
+<$list filter="[all[current]!is[system]!is[shadow]!node-pill[no]]">
+<$reveal state="$:/config/gumo-customisation/node-pill-top" type="match" text="show">
+<div style="font-size: 0.8em;">
+<$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=inline/>
+</div>
+</$reveal>
+</$list>

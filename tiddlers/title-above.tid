@@ -1,0 +1,10 @@
+created: 20240827161737843
+creator: 马不前
+modified: 20240827163138116
+modifier: 马不前
+tags: $:/tags/ViewTemplate
+title: title-above
+
+<$list filter="[<currentTiddler>!prefix[$:/]!tag[post]]">
+<h2><$transclude tiddler="poem-above" mode="block"/></h2>
+</$list>
