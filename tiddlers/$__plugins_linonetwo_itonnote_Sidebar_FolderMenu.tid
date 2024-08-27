@@ -1,0 +1,24 @@
+caption: <<lingo Config/FolderMenu/Caption $:/plugins/linonetwo/itonnote/language/>>
+created: 20240827143220401
+creator: 马不前
+description: <<lingo Config/FolderMenu/Description $:/plugins/linonetwo/itonnote/language/>>
+is-dropdown: yes
+modified: 20240827143223522
+modifier: 马不前
+tags: 
+title: $:/plugins/linonetwo/itonnote/Sidebar/FolderMenu
+type: text/vnd.tiddlywiki
+
+\procedure lingo-base() $:/plugins/linonetwo/itonnote/language/
+
+<$scrollable fallthrough="none" class="tc-popup-keep tc-menubar-dropdown-sidebar">
+
+	<$let toc-open-icon="$:/core/images/fold-button" toc-closed-icon="$:/core/images/folder">
+		<div class="tc-table-of-contents">
+			<$transclude $variable="toc-selective-expandable" tag={{$:/plugins/linonetwo/itonnote/Configs/SideBarFolderMenuBaseTitle}} />
+		</div>
+	</$let>
+
+  <<lingo FolderMenu/Help>>
+
+</$scrollable>
