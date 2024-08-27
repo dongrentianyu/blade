@@ -1,0 +1,11 @@
+created: 20240827164726201
+creator: 马不前
+modified: 20240827165045442
+modifier: 马不前
+tags: $:/tags/StartupAction t
+title: sidebar-close
+
+<$list filter="[[$:/info/browser/is/mobile]get[text]else[yes]match[no]]"> 
+<$action-setfield $tiddler="$:/themes/tiddlywiki/vanilla/options/stickytitles" text="no"/>
+<$action-setfield $tiddler="$:/state/sidebar" text="no"/>
+</$list>

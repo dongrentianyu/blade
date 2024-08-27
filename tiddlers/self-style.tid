@@ -1,8 +1,8 @@
 created: 20240826155541374
 creator: 马不前
-modified: 20240827163336754
+modified: 20240827165059029
 modifier: 马不前
-tags: $:/tags/Stylesheet
+tags: 
 title: self-style
 
 html body .tc-tiddler-frame {
