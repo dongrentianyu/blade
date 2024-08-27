@@ -1,16 +1,24 @@
 created: 20240826155541374
 creator: 马不前
-modified: 20240827045557039
+modified: 20240827134705758
 modifier: 马不前
 tags: $:/tags/Stylesheet
 title: self-style
 
-html body .tc-story-river {
-	margin-top: 70px;
-	margin-left: 70px;
-	margin-right: 70px;
 
+
+html body .tc-tiddler-frame {
+	background-color: inherit;
+	border: none;
+	<<box-shadow "none">>
 }
 
+html body .tc-tiddler-title {
+	background-color: inherit;
+}
 .tc-subtitle {display:none;}
-h2.tc-title {display:none;)
+h2.tc-title {display:none;}
+.tc-tags-wrapper {
+display:none;
+    margin: 4px 0 14px 0;
+}

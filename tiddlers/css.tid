@@ -1,0 +1,15 @@
+created: 20240827125320429
+creator: 马不前
+modified: 20240827125345325
+modifier: 马不前
+tags: 
+title: css
+
+```
+html body .tc-story-river {
+	margin-top: 70px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+```
