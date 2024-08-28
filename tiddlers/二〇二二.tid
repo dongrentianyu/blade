@@ -1,6 +1,13 @@
 created: 20240827170158933
 creator: 马不前
-modified: 20240827170204261
+list: 我听见斧头开了花 夜撕开了匕首的神秘 Z/s 为你告别的诗 血与泪的黄昏 不知从何时起 大胆往世界一躺 把人抛 枪与腔 谁？我们！！！ 假枪 余处幽篁兮
+modified: 20240828003639374
 modifier: 马不前
 tags: 爱是刻舟求剑
 title: 二〇二二
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+</$list>

@@ -1,6 +1,13 @@
 created: 20240827163007046
 creator: 马不前
-modified: 20240827163037509
+list: 满地的虫和它们的嘉年华 电子厂的年轻人们 向我刺杀黄昏 怎么还不死？ 在锅里
+modified: 20240828004021147
 modifier: 马不前
 tags: 爱是刻舟求剑
 title: 二〇二三
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+</$list>
