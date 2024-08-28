@@ -21,3 +21,11 @@ h2.tc-title {display:none;}
 display:none;
     margin: 4px 0 14px 0;
 }
+.blockquote {
+  line-height: 1.7;
+  border-left: 6px solid #c4c4c4;
+}
+::selection {
+  background-color: black;
+  color: white;
+}
