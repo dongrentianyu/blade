@@ -1,0 +1,15 @@
+caption: Wiki Subtitle
+created: 20241016192602109
+creator: 马不前
+left_menu_order: 3
+modified: 20241016192638925
+modifier: 马不前
+order: 2
+right_menu_order: 15
+tags: [[Menu Icon]] [[Icon Menus]] $:/tags/TopRightMenu
+title: $:/plugins/inmysocks/iconmenus/icon/Wiki Subtitle
+top_left_menu_order: 2
+top_middle_menu_order: 2
+top_right_menu_order: 2
+
+{{$:/SiteSubtitle}}

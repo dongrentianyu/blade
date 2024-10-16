@@ -2,11 +2,11 @@ caption: self-topbar
 created: 20241016173259912
 creator: 马不前
 left_menu_order: 11
-modified: 20241016183613611
+modified: 20241016192417417
 modifier: 马不前
 order: 2
 right_menu_order: 15
-tags: [[Menu Icon]] [[Icon Menus]] $:/tags/TopRightMenu $:/tags/TopLeftMenu Configuration $:/tags/BottomMiddleMenu
+tags: [[Menu Icon]] [[Icon Menus]] $:/tags/TopLeftMenu Configuration $:/tags/BottomMiddleMenu
 title: $:/plugins/inmysocks/iconmenus/icon/self-topbar
 top_left_menu_order: 2
 top_middle_menu_order: 2

@@ -1,0 +1,15 @@
+caption: Advanced Search
+created: 20150121174337179
+creator: inmysocks
+left_menu_order: 17
+modified: 20241016192421177
+modifier: 马不前
+order: 10
+right_menu_order: 3
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Advanced Search
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 1
+
+{{$:/core/ui/Buttons/advanced-search}}
