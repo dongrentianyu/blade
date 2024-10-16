@@ -16,6 +16,14 @@ tiddlers/$__language.tid
 tiddlers/$__palette.tid
 tiddlers/$__UpgradeLibrary
 tiddlers/$__UpgradeLibrary_List
+
 # fsrs
 tiddlers/$__Deck_new_study.tid
 tiddlers/$__Deck_default_study.tid
+
+# 解锁编辑的相应的文件，后续需要调整时可以放出来
+tiddlers/self-style.tid
+tiddlers/$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_close.tid
+tiddlers/$__config_ViewToolbarButtons_Visibility_$__plugins_oeyoews_copy-title_copybutton.tid
+tiddlers/$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_more-tiddler-actions.tid
+tiddlers/$__config_ViewToolbarButtons_Visibility_$__core_ui_Buttons_edit.tid
