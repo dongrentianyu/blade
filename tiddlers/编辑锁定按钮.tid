@@ -1,0 +1,43 @@
+caption: {{$:/core/images/unlocked-padlock}} 锁定编辑
+created: 20241016220219538
+creator: 马不前
+description: 解锁与锁定编辑状态
+modified: 20241016221558049
+modifier: 马不前
+tags: 
+title: 编辑锁定按钮
+
+\whitespace trim
+
+<$list filter="[[self-style]!tag[$:/tags/Stylesheet]]" variable="ignore">
+  <$button 
+	tooltip="锁定编辑" 
+	aria-label="锁定编辑" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tiddler="self-style" $tags="$:/tags/Stylesheet" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/core/images/unlocked-padlock}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="锁定编辑"/>
+      </span>
+    </$list>
+  </$button>
+</$list>
+<$list filter="[[self-style]tag[$:/tags/Stylesheet]]" variable="ignore">
+  <$button 
+	tooltip="解锁编辑" 
+	aria-label="解锁编辑" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tiddler="self-style" $tags="+[!match[$:/tags/Stylesheet]]" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/core/images/locked-padlock}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="解锁编辑"/>
+      </span>
+    </$list>
+  </$button>
+</$list>

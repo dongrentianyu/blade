@@ -1,10 +1,12 @@
 Caption: 切换状态
 Hint: 切换编辑状态
+caption: {{$:/core/images/plus-button}} 切换编辑状态
 created: 20241016194532702
 creator: 马不前
-modified: 20241016202831921
+description: 切换编辑状态
+modified: 20241016221553584
 modifier: 马不前
-tags: $:/tags/PageControls
+tags: 
 title: 切换编辑状态
 
 \define switchActions() <$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/state/test" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/plugins/oeyoews/copy-title/copybutton" $field="text" $value=<<show-hide>> />

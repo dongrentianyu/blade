@@ -4,8 +4,7 @@ creator: 马不前
 dark-palette: $:/palettes/Nord
 description: Toggle between light/warm/dark color palette
 light-palette: $:/palettes/Notion
-list-after: 
-modified: 20241016202433696
+modified: 20241016221255447
 modifier: 马不前
 tags: $:/tags/PageControls
 title: $:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette
