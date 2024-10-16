@@ -31,7 +31,7 @@ left_menu_style: """{{$:/plugins/inmysocks/iconmenus/Left Menu Pop Out on Hover 
 left_menu_text_color: #000000
 left_menu_vertical_offset: -20px
 left_menu_width: 40px
-modified: 20241016184144964
+modified: 20241016192038299
 modifier: 马不前
 right_menu_background_color: grey
 right_menu_border_color: 
@@ -46,9 +46,9 @@ right_menu_vertical_offset: -20px
 right_menu_width: 30px
 tags: [[Icon Menus]]
 title: $:/plugins/inmysocks/iconmenus/icon_menu_settings
-top_bar_background_color: #f4f4f1
+top_bar_background_color: #fafaf7
 top_bar_border: none
-top_bar_border_color: #f4f4f1
+top_bar_border_color: #fafaf7
 top_bar_height: 40px
 top_bar_hidden_size: -25px
 top_bar_style: """{{$:/plugins/inmysocks/iconmenus/Top Bar Basic Style}}"""

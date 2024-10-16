@@ -1,9 +1,9 @@
 created: 20150123102312282
 creator: inmysocks
-modified: 20241016184200053
+modified: 20241016190338215
 modifier: 马不前
 show_left: show
-show_middle: show
+show_middle: hide
 show_right: show
 tags: [[Icon Menus]] $:/tags/TopRightBar
 title: $:/plugins/inmysocks/iconmenus/TopBar/menu
