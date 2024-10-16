@@ -3,9 +3,9 @@ created: 20240828022121734
 creator: 马不前
 dark-palette: $:/palettes/Nord
 description: Toggle between light/warm/dark color palette
-light-palette: $:/palettes/SpartanDay
+light-palette: $:/palettes/Notion
 list-after: 
-modified: 20240828022154951
+modified: 20241016202433696
 modifier: 马不前
 tags: $:/tags/PageControls
 title: $:/plugins/kookma/shiraz/ui/Buttons/SwitchPalette

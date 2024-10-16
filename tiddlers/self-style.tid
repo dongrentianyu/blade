@@ -1,6 +1,6 @@
 created: 20240826155541374
 creator: 马不前
-modified: 20241016183246950
+modified: 20241016203911270
 modifier: 马不前
 tags: Configuration $:/tags/Stylesheet
 title: self-style
@@ -10,11 +10,11 @@ html body .tc-tiddler-frame {
 	border: none;
 	<<box-shadow "none">>
 }
-$:/tags/Stylesheet
+
 html body .tc-tiddler-title {
 	background-color: inherit;
 }
-
+.tc-titlebar {display:none;}
 .tc-subtitle {display:none;}
 h2.tc-title {display:none;}
 .tc-tags-wrapper {
