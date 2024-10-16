@@ -1,0 +1,21 @@
+caption: Create New Tiddler From Template
+created: 20150121161849750
+creator: inmysocks
+image: {{$:/core/images/new-button}}
+left_menu_order: 3
+modified: 20241016184344584
+modifier: 马不前
+order: 3
+right_menu_order: 5
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Create New Tiddler From Template
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+<$button popup='$:/state/createnewtiddler' class='tc-btn-invisible' tooltip='New Tiddler from Template'>{{$:/core/images/new-button}}</$button><$reveal type='popup' state='$:/state/createnewtiddler'><div class="tc-drop-down">
+Create New Tiddler Using Template:
+<$list filter='[prefix[New Tiddler Template - ]]' variable=TemplateName><$button><$view tiddler=<<TemplateName>> field=title/><$action-sendmessage $message='tm-new-tiddler' $param=<<TemplateName>>/></$button>
+</$list>
+</div>
+</$reveal>

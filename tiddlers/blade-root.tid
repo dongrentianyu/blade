@@ -1,12 +1,12 @@
 code-body: yes
 created: 20240827152246176
 creator: 马不前
-modified: 20240827160225069
+modified: 20241016173215071
 modifier: 马不前
+tag-code: $:/tags/ViewTemplate
 tags: 
 title: blade-root
 
-$:/tags/ViewTemplate
 <$list filter="[<currentTiddler>!prefix[$:/]in-tagtree-of:inclusive[Blade]]">
 	<div style='width:100%'>
 		<$set name=CurrentTag value={{!!title}} >

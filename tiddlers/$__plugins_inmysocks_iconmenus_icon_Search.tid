@@ -1,0 +1,15 @@
+caption: Search
+created: 20150121171609124
+creator: inmysocks
+left_menu_order: 10
+modified: 20241016172626533
+modifier: 马不前
+order: 11
+right_menu_order: 14
+tags: [[Menu Icon]] [[Icon Menus]] $:/tags/LeftMenu
+title: $:/plugins/inmysocks/iconmenus/icon/Search
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+<$button to='$:/AdvancedSearch' class='tc-btn-invisible'>{{$:/core/ui/Buttons/advanced-search}}</$button>

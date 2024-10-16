@@ -1,0 +1,15 @@
+caption: Save Wiki
+created: 20150121175630282
+creator: inmysocks
+left_menu_order: 12
+modified: 20241016181930778
+modifier: 马不前
+order: 7
+right_menu_order: 13
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Save Wiki
+top_left_menu_order: 3
+top_middle_menu_order: 4
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/save-wiki}}

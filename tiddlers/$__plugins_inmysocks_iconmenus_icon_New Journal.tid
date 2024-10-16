@@ -1,0 +1,15 @@
+caption: New Journal
+created: 20150121173516193
+creator: inmysocks
+left_menu_order: 15
+modified: 20241016184404624
+modifier: 马不前
+order: 14
+right_menu_order: 9
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/New Journal
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/new-journal}}

@@ -1,0 +1,15 @@
+caption: Close All
+created: 20150121173410074
+creator: inmysocks
+left_menu_order: 2
+modified: 20241016184624323
+modifier: 马不前
+order: 11
+right_menu_order: 4
+tags: $:/tags/LeftMenu [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Close All
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/close-all}}

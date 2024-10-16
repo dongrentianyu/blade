@@ -1,0 +1,15 @@
+caption: Refresh
+created: 20150121173606555
+creator: inmysocks
+left_menu_order: 1
+modified: 20241016181929577
+modifier: 马不前
+order: 6
+right_menu_order: 12
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Refresh
+top_left_menu_order: 1
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/refresh}}

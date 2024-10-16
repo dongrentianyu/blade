@@ -1,0 +1,15 @@
+caption: Permaview
+created: 20150121173435603
+creator: inmysocks
+left_menu_order: 11
+modified: 20241016184620764
+modifier: 马不前
+order: 5
+right_menu_order: 11
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Permaview
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/permaview}}

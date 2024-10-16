@@ -1,0 +1,25 @@
+caption: self-topbar
+created: 20241016173259912
+creator: 马不前
+left_menu_order: 11
+modified: 20241016183613611
+modifier: 马不前
+order: 2
+right_menu_order: 15
+tags: [[Menu Icon]] [[Icon Menus]] $:/tags/TopRightMenu $:/tags/TopLeftMenu Configuration $:/tags/BottomMiddleMenu
+title: $:/plugins/inmysocks/iconmenus/icon/self-topbar
+top_left_menu_order: 2
+top_middle_menu_order: 2
+top_right_menu_order: 2
+
+<$let a={{$:/temp/focussedTiddler}} b={{{ [list<tv-story-list>first[]] }}} >
+<$list filter="[<b>!prefix[$:/]in-tagtree-of:inclusive[Index]]">
+	<div style='width:100%'>
+		<$set name=CurrentTag value={{!!title}} >
+			<$set name=TheFilter filter='[is[current]]' >
+				<$transclude $variable="breadcrumbs" apex_tag-4="Index" tid-4=<<currentTiddler>>  use_apex_tag-4="Index" length_limit-2="15"/>
+			</$set>
+		</$set>
+	</div>
+</$list>
+</$let>

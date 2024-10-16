@@ -1,0 +1,15 @@
+caption: Home
+created: 20150121170719185
+creator: inmysocks
+left_menu_order: 0
+modified: 20241016172949260
+modifier: 马不前
+order: NaN
+right_menu_order: 1
+tags: [[Menu Icon]] $:/tags/RightMenu $:/tags/LeftMenu [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Home
+top_left_menu_order: 0
+top_middle_menu_order: 1
+top_right_menu_order: 18
+
+{{$:/core/ui/Buttons/home}}

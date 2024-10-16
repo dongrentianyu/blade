@@ -1,0 +1,20 @@
+caption: Old Hide Menu Button
+created: 20150130003607080
+creator: inmysocks
+left_menu_order: 7
+modified: 20241016183615059
+modifier: 马不前
+order: 0
+right_menu_order: 0
+tags: [[Menu Icon]] $:/tags/RightMenu $:/tags/LeftMenu
+title: $:/inmysocks/iconmenus/icon/Old Hide Menu Button
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+<$reveal state="$:/state/sidebar" type="nomatch" text="no">
+<$button set="$:/state/sidebar" setTo="no" tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class="tc-btn-invisible">{{$:/core/images/chevron-right}}</$button>
+</$reveal>
+<$reveal state="$:/state/sidebar" type="match" text="no">
+<$button set="$:/state/sidebar" setTo="yes" tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class="tc-btn-invisible">{{$:/core/images/chevron-left}}</$button>
+</$reveal>

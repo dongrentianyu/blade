@@ -1,0 +1,15 @@
+caption: Control Panel
+created: 20150121164820855
+creator: inmysocks
+left_menu_order: 1
+modified: 20241016184700989
+modifier: 马不前
+order: 3
+right_menu_order: 2
+tags: $:/tags/LeftMenu [[Menu Icon]] $:/tags/RightMenu [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Control Panel
+top_left_menu_order: 0
+top_middle_menu_order: 3
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/control-panel}}

@@ -1,0 +1,15 @@
+caption: Tag Manager
+created: 20150121174313928
+creator: inmysocks
+left_menu_order: 10
+modified: 20241016172627294
+modifier: 马不前
+order: 16
+right_menu_order: 17
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Tag Manager
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/tag-manager}}

@@ -1,8 +1,8 @@
 created: 20240826155541374
 creator: 马不前
-modified: 20240828005054281
+modified: 20241016183246950
 modifier: 马不前
-tags: $:/tags/Stylesheet
+tags: Configuration $:/tags/Stylesheet
 title: self-style
 
 html body .tc-tiddler-frame {
@@ -10,7 +10,7 @@ html body .tc-tiddler-frame {
 	border: none;
 	<<box-shadow "none">>
 }
-
+$:/tags/Stylesheet
 html body .tc-tiddler-title {
 	background-color: inherit;
 }

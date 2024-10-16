@@ -1,0 +1,15 @@
+caption: New Tiddler
+created: 20241016184443978
+creator: 马不前
+left_menu_order: 1
+modified: 20241016184704509
+modifier: 马不前
+order: 14
+right_menu_order: 9
+tags: [[Menu Icon]] [[Icon Menus]] $:/tags/LeftMenu
+title: $:/plugins/inmysocks/iconmenus/icon/New Tiddler
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/new-tiddler}}

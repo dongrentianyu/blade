@@ -1,0 +1,15 @@
+caption: Theme
+created: 20150121174228645
+creator: inmysocks
+left_menu_order: 7
+modified: 20241016184622052
+modifier: 马不前
+order: 17
+right_menu_order: 16
+tags: [[Menu Icon]] [[Icon Menus]]
+title: $:/plugins/inmysocks/iconmenus/icon/Theme
+top_left_menu_order: 0
+top_middle_menu_order: 0
+top_right_menu_order: 0
+
+{{$:/core/ui/Buttons/theme}}
