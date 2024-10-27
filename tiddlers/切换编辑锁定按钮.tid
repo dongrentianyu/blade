@@ -2,15 +2,15 @@ caption: {{$:/core/images/unlocked-padlock}} 锁定编辑
 created: 20241016221525472
 creator: 马不前
 description: 解锁与锁定编辑状态
-modified: 20241016221852650
+modified: 20241027184104197
 modifier: 马不前
 tags: $:/tags/PageControls
 title: 切换编辑锁定按钮
 
-\define switchActions() <$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/state/test" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/plugins/oeyoews/copy-title/copybutton" $field="text" $value=<<show-hide>> />
+\define switchActions() <$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/more-tiddler-actions" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="lock-button" $field="text" $value=<<show-hide>> /><$action-setfield $tiddler="$:/config/ViewToolbarButtons/Visibility/$:/plugins/oeyoews/copy-title/copybutton" $field="text" $value=<<show-hide>> />
 \whitespace trim
 <$let 
-show-hide={{{ [[$:/state/test]get[text]match[show]then[hide]else[show]] }}} >
+show-hide={{{ [[lock-button]get[text]match[show]then[hide]else[show]] }}} >
 <$list filter="[[self-style]!tag[$:/tags/Stylesheet]]" variable="ignore">
   <$button 
 	tooltip="锁定编辑" 
