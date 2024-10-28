@@ -2,7 +2,7 @@ caption: self-topbar
 created: 20241016173259912
 creator: 马不前
 left_menu_order: 11
-modified: 20241016192417417
+modified: 20241028142857399
 modifier: 马不前
 order: 2
 right_menu_order: 15
@@ -12,7 +12,7 @@ top_left_menu_order: 2
 top_middle_menu_order: 2
 top_right_menu_order: 2
 
-<$let a={{$:/temp/focussedTiddler}} b={{{ [list<tv-story-list>first[]] }}} >
+<$let a={{$:/temp/focussedTiddler}} b={{{ [{$:/HistoryList!!current-tiddler}first[]] }}} >
 <$list filter="[<b>!prefix[$:/]in-tagtree-of:inclusive[Index]]">
 	<div style='width:100%'>
 		<$set name=CurrentTag value={{!!title}} >
