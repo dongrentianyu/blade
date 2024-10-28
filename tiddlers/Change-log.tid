@@ -1,13 +1,23 @@
 created: 20241027180325949
 creator: 马不前
-modified: 20241027184227709
+modified: 20241027192905333
 modifier: 马不前
 tags: 
 title: Change-log
 
 2024-10-28
 
-修改了[[$:/core/ui/PageTemplate]]，修改方式如[[论坛链接|https://talk.tiddlywiki.org/t/is-there-a-way-to-implement-tm-close-tiddler-globally/3110/14]]中使用的一样，目的是确保每次打开都保持只有一个条目，这样就可以确保顶部栏的更新。
+修改了[[$:/core/ui/PageTemplate]]，修改方式如[[论坛链接|https://talk.tiddlywiki.org/t/is-there-a-way-to-implement-tm-close-tiddler-globally/3110/14]]中使用的一样，目的是确保每次打开都保持只有一个条目，这样就可以确保顶部栏的更新。但修改了里面的不足，换言之，即把里面的代码提前了。不然会导致故事河页面无法展示。
+
+实际使用的代码，部分
+
+```
+<div class=<<containerClasses>>>
+
+<$messagecatcher $tm-navigate=<<navigate-actions>> >
+
+<$navigator story="$:/StoryList" history="$:/HistoryList" openLinkFromInsideRiver={{$:/config/Navigation/openLinkFromInsideRiver}} openLinkFromOutsideRiver={{$:/config/Navigation/openLinkFromOutsideRiver}} relinkOnRename={{$:/config/RelinkOnRename}}>
+```
 
 要确保[[lock-button]]的值为`show`
 
