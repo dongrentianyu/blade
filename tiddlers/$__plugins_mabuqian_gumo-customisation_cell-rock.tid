@@ -1,0 +1,100 @@
+caption: 当前条目
+created: 20241029224244350
+creator: 马不前
+modified: 20241029224250105
+modifier: 马不前
+tags: $:/tags/Macro
+title: $:/plugins/mabuqian/gumo-customisation/cell-rock
+type: text/vnd.tiddlywiki
+
+\define yetAgain(use_apex_tag:"true",apex_tag,tid)
+<$reveal type='match' state="$use_apex_tag$" text='true'>
+	<$reveal type='match' state="$tid$" text="$apex_tag$">
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+		<$list filter=<<Extra>> emptyMessage=''>
+			... > 
+		</$list>
+		<$list filter="""$(End)$""">
+			<$link to=<<currentTiddler>>>
+				<$view field='title'/>
+			</$link>
+			> 
+		</$list>
+		<br>
+	</$reveal>
+</$reveal>
+<$reveal type='nomatch' state={{$use_apex_tag$}} text='true'>
+	<$link to=<<currentTiddler>>>
+		<$view field='title'/>
+	</$link>
+	> 
+	<$list filter=<<Extra>> emptyMessage=''>
+			.. > 
+	</$list>
+	<$list filter="""$(End)$""">
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+	</$list>
+	<!-- <br> -->
+</$reveal>
+\end
+
+\define again(use_apex_tag-2:"true",apex_tag-2,tid-2)
+<$list filter=<<First>> >
+    <$transclude $variable="yetAgain" apex_tag="$apex_tag-2$" tid="$tid-2$" use_apex_tag="$use_apex_tag-2$"/>
+</$list>
+\end
+
+\define finalFilter(use_apex_tag-3:"true",apex_tag-3,tid-3,length_limit)
+<$set name=First filter="""$(TheFilter)$ +[last[]]""">
+	<$set name=End filter="""$(TheFilter)$ +[butlast[]]  +[butfirst[]] +[first[$length_limit$]] +[reverse[]]""">
+		<$set name=Extra filter="""$(TheFilter)$ +[butlast[]] +[butfirst[]] +[butfirst[$length_limit$]] +[limit[1]]""" emptyValue='[is[system]!is[system]]'>
+			<$transclude $variable="again" apex_tag-2="$apex_tag-3$" tid-2="$tid-3$" use_apex_tag-2="$use_apex_tag-3$" />
+		</$set>
+	</$set>
+</$set>
+\end
+
+\define breadcrumbsEmptyMessage(use_apex_tag-5:"true",apex_tag-5,tid-5,length_limit-3)
+<$set name=TheFilter filter="""$(TheFilter)$ [<CurrentTag>]""">
+    <$transclude $variable="breadcrumbs" apex_tag-4="$apex_tag-5$" tid-4="$tid-5$" use_apex_tag-4="$use_apex_tag-5$" length_limit-2="$length_limit-3$"/>
+</$set>
+\end
+
+\define breadcrumbs(use_apex_tag-4:"true",apex_tag-4,tid-4,length_limit-2)
+<$list filter='[<CurrentTag>tags[]in-tagtree-of:inclusive[$apex_tag-4$]] -[[$:/tags/SideBar]]' variable=CurrentTag emptyMessage=""" <$transclude $variable="finalFilter" apex_tag-3="$apex_tag-4$" tid-3="$tid-4$" use_apex_tag-3="$use_apex_tag-4$" length_limit="$length_limit-2$" /> """>
+	<$list filter="""$(TheFilter)$ +[field:title<CurrentTag>]""" emptyMessage=""" <$transclude $variable="breadcrumbsEmptyMessage" apex_tag-5="$apex_tag-4$" tid-5="$tid-4$" use_apex_tag-5="$use_apex_tag-4$" length_limit-3="$length_limit-2$" />  """>
+	</$list>
+</$list>
+\end
+
+
+\define cell-rock(root,namx,true-gate,long,text)
+
+<$list filter="[<currentTiddler>!prefix[$:/]in-tagtree-of:inclusive[$root$]]">
+<div style='width:100%'>
+<$reveal type='nomatch' state={{{ [[$:/state/Global/ShowBreadcrumbs/]addsuffix[$root$]] }}} text=true>
+	<$button class='tc-btn-invisible' set={{{ [[$:/state/Global/ShowBreadcrumbs/]addsuffix[$root$]] }}} setTo='true'>
+		{{$:/core/images/right-arrow}} <$text text="$text$"/>
+	</$button>
+</$reveal>
+
+<$reveal type='match' state={{{ [[$:/state/Global/ShowBreadcrumbs/]addsuffix[$root$]] }}} text=true>
+	<$button class='tc-btn-invisible' set={{{ [[$:/state/Global/ShowBreadcrumbs/]addsuffix[$root$]] }}} setTo='false'>
+		{{$:/core/images/down-arrow}} <$text text="$text$"/>
+	</$button><br>
+		<$set name=CurrentTag value={{!!title}} >
+		<$set name=TheFilter filter='[is[current]]' >
+			<$transclude $variable="breadcrumbs" apex_tag-4="$root$" tid-4="$namx$" use_apex_tag-4="$true-gate$" length_limit-2="$long$" />
+		</$set>
+	</$set>
+</$reveal>
+</div>
+</$list>
+
+\end

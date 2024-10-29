@@ -2,7 +2,7 @@ caption: self-topbar
 created: 20241016173259912
 creator: 马不前
 left_menu_order: 11
-modified: 20241028142857399
+modified: 20241029225446088
 modifier: 马不前
 order: 2
 right_menu_order: 15
@@ -18,6 +18,9 @@ top_right_menu_order: 2
 		<$set name=CurrentTag value={{!!title}} >
 			<$set name=TheFilter filter='[is[current]]' >
 				<$transclude $variable="breadcrumbs" apex_tag-4="Index" tid-4=<<currentTiddler>>  use_apex_tag-4="Index" length_limit-2="15"/>
+					<%if [<b>!match[Index]] %>
+						<$link to=<<CurrentTag>>><$view tiddler=<<CurrentTag>> field="title"/></$link>
+					<%endif%>
 			</$set>
 		</$set>
 	</div>
