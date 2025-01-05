@@ -1,6 +1,12 @@
 created: 20250101051102765
 creator: 马不前
-modified: 20250101051118779
+modified: 20250105070315751
 modifier: 马不前
 tags: Blade
 title: 二〇二五
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+</$list>
