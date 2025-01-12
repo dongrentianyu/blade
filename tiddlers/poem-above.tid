@@ -1,8 +1,38 @@
 created: 20240827155714012
 creator: 马不前
-modified: 20240827170145159
+modified: 20250112120514211
 modifier: 马不前
-tags: t
+tags: t post
 title: poem-above
 
-[[二〇一九]] [[二〇二〇]] [[二〇二一]] [[二〇二二]] [[二〇二三]] [[二〇二四]]
+<style>
+.content-container{
+display:flex;
+flex-wrap:wrap;/*允许换行*/
+justify-content:center;/*水平居中*/
+margin-top:20px;/*上方间距*/
+}
+.content{
+padding:15px;/*内边距*/
+margin:10px;/*外间距*/
+border-radius:5px;/*圆角*/
+width:calc(33.33%-20px);/*每列宽度设置*/
+box-sizing:border-box;/*包含内边距和边框*/
+text-align:center;/*内容居中*/
+}
+.content:nth-child(7){
+width:calc(100%-20px);/*第七个内容居中时的宽度*/
+margin:10pxauto;/*上下间距，自动左右间距居中*/
+}
+</style>
+
+<div class="content-container">
+<div class="content">[[二〇一九]]</div>
+<div class="content">[[二〇二〇]]</div>
+<div class="content">[[二〇二一]]</div>
+<div class="content">[[二〇二二]]
+</div>
+<div class="content">[[二〇二三]]</div>
+<div class="content">[[二〇二四]]</div>
+<div class="content">[[二〇二五]]</div>
+</div>
