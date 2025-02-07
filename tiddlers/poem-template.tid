@@ -1,11 +1,11 @@
 code-body: yes
 created: 20240827144435605
 creator: 马不前
-modified: 20240827165943858
+modified: 20250207113929995
 modifier: 马不前
 title: poem-template
 
-<div style="text-align: center; white-space: pre-line;">
+<div style="text-align: left; white-space: pre-line; max-height: 400px; overflow: auto;  scrollbar-width: none; padding-left: 150px; ">
 
 <$transclude $tiddler=<<currentTiddler>> />
 
